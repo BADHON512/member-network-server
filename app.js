@@ -11,7 +11,7 @@ const app= express()
 app.use(express.json({limit: '1mb'}))
 app.use(express.urlencoded({extended:false,limit: '1mb'}))
 app.use(cors({
-    origin: "https://member-network-server.vercel.app/",
+    origin: "https://member-network-server.vercel.app",
     credentials: true
 }));
 app.use(cookieParser())
